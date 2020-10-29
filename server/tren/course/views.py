@@ -29,9 +29,13 @@ def courseDetail(request, pk):
 
 
 
-@api_view(['GET'])
-def courseDetail(request, pk):
-    course = Course.objects.get(id=pk)
-    serializer = CourseSerializer(task, many=False)
+@api_view(['POST'])
+def courseCreate(request):
+    serializer = CourseSerializer(data=request.data)
+
+    if serializer.is_valid():
+        serializer.save()
+
+        
 
     return Response(serializer.data)
