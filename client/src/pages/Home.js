@@ -4,11 +4,12 @@ import Timeline from "../components/Timeline";
 import FormHero from "../components/FormHero";
 import Footer from "../components/Footer";
 import CtaContact from "../components/CtaContact";
+import CustomNavbar from "../components/CustomNavbar";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      <CustomNavbar />
       <FormHero />
       <Timeline />
       <CtaContact />
