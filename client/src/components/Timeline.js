@@ -9,7 +9,7 @@ export default function Timeline() {
             Hvordan fungerer det?
           </div>
           <div className="text-xl font-normal mt-4">
-            Vi er et hjem for både bedrifter og influencere.
+            Vi er et hjem for både bedrifter som ønsker å markedsføre seg og innholdsprodusenter på blant annet TikTok, Instagram og YouTube.
             
           </div>
           <div className="mt-6 flex justify-center h-12 relative"></div>

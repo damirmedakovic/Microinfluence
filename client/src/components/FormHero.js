@@ -7,99 +7,62 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function FormHero() {
   return (
     <div>
-      <div className="mx-auto max-w-6xl p-12">
-        <div className="flex flex-col md:flex-row justify-center">
-          <div className="md:w-1/2 max-w-md flex flex-col justify-center">
-            <div className="md:text-3xl text-xl font-black uppercase">
-              Influencers + Brands = <FontAwesomeIcon icon={faHeart} />
-            </div>
-            <div className="text-xl mt-4">
-              Få ditt merke sett. Tjen penger som influencer
-            </div>
+      <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <svg
+              class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+              fill="currentColor"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <polygon points="50,0 100,0 50,100 0,100" />
+            </svg>
 
-            <div className="mt-4">
-              <div className="inline-block font-bold text-xl mt-4 mr-2">Jeg er en</div>
-              <div
-                className="inline-block shadow-md font-medium m-2 py-2 px-4 text-green-100
-                  cursor-pointer bg-teal-600 rounded text-lg tr-mt text-center"
-              >
-                Bedrift
-              </div>{" "}
-              <div
-                className="inline-block shadow-md font-medium m-2 py-2 px-4 text-green-100
-                  cursor-pointer bg-teal-600 rounded text-lg tr-mt text-center"
-              >
-                Influencer
-              </div>
-            </div>
-          </div>
+            <div class="relative pt-6 px-4 sm:px-6 lg:px-8"></div>
 
-          <div className="md:w-1/2 flex justify-start mt-5 md:justify-end w-full md:w-1/2 ">
-            <div className="shadow-md flex-auto max-w-sm p-10 pb-20">
-              <span className="font-bold h-9 mt-3 text-gray-600 text-xs leading-8 uppercase">
-                Registrer som bedrift
-              </span>
-              <div className="w-full">
-                <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
-                  <span className="text-red-400 mr-1">*</span> Navn
-                </div>
-                <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">
-                  {" "}
-                  <input
-                    placeholder="Kari"
-                    className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
-                  />{" "}
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
-                  <span className="text-red-400 mr-1">*</span> Etternavn
-                </div>
-                <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">
-                  {" "}
-                  <input
-                    placeholder="Hansen"
-                    className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
-                  />{" "}
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
-                  <span className="text-red-400 mr-1">*</span> E-mail
-                </div>
-                <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">
-                  {" "}
-                  <input
-                    placeholder="navn@domene.no"
-                    className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
-                  />{" "}
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
-                  <span className="text-red-400 mr-1">*</span> Platform
-                </div>
-                <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">
-                  {" "}
-                  <input
-                    placeholder="Instagram, YouTube, MySpace..."
-                    className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
-                  />{" "}
-                </div>
-              </div>
-              <div className="mt-6 relative">
-                <Link to="/register">
-                  <div
-                    className="shadow-md font-medium py-2 px-4 text-green-100
-                  cursor-pointer bg-teal-600 rounded text-lg tr-mt  absolute text-center w-full"
-                    href="/register"
-                  >
-                    Fortsett
+
+
+            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+              <div class="sm:text-center lg:text-left">
+                <h1 class="text-xl tracking-tight font-bold text-gray-900 sm:text-2xl md:text-4xl">
+                  <span class="block xl:inline">Influencers + Brands = </span>
+                  <span class="block text-indigo-800 xl:inline">
+                  <FontAwesomeIcon icon={faHeart} />
+                  </span>
+                </h1>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                  Med Microinfluence har både influencere og bedrifter en felles platform for å søke, spore og utføre digitale markedsføringskampanjer. 
+                </p>
+                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                  <div class="rounded-md shadow">
+                    <a
+                      href="/register-company"
+                      class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    >
+                      Registrer som bedrift
+                    </a>
                   </div>
-                </Link>
+                  <div class="mt-3 sm:mt-0 sm:ml-3">
+                    <a
+                      href="/register-influencer"
+                      class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                    >
+                      Registrer som influencer
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
+            </main>
           </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img
+            class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="https://images.unsplash.com/photo-1585834377505-625794024e04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+            alt=""
+          />
         </div>
       </div>
     </div>

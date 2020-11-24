@@ -1,82 +1,90 @@
 import React from "react";
 
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Footer() {
   return (
     <div>
-      <section class="bg-white py-8 w-full">
-        <div class="container mx-auto px-8">
+      <section class="bg-indigo-800 py-8 w-full">
+        <div class="container mx-auto px-8 text-white">
           <div class="table w-full">
             <div class="block sm:table-cell">
-              <p class="uppercase text-grey text-sm sm:mb-6">Links</p>
+              <p class="uppercase font-bold text-sm sm:mb-6">Hurtiglenker</p>
               <ul class="list-reset text-xs mb-6">
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    FAQ
+                  <a href="#" class="hover:text-grey-dark">
+                    Om oss
                   </a>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    Help
+                  <a href="#" class="hover:text-grey-dark">
+                    Ofte stilte spørsmål
                   </a>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    Support
+                  <a href="#" class="hover:text-grey-dark">
+                    Bedrifter
+                  </a>
+                </li>
+                <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                  <a href="#" class="hover:text-grey-dark">
+                    Influencere
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="block sm:table-cell">
-              <p class="uppercase text-grey text-sm sm:mb-6">Legal</p>
+            <div class="block sm:table-cell text-white">
+              <p class="uppercase font-bold text-sm sm:mb-6">Følg oss på</p>
               <ul class="list-reset text-xs mb-6">
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    Terms
+                  <a href="#" class="hover:text-grey-dark">
+                    <FontAwesomeIcon icon={faFacebook} /> Facebook
+                  </a>
+                </li>
+                <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                  <a href="#" class="hover:text-grey-dark">
+                    <FontAwesomeIcon icon={faInstagram} /> Instagram
                   </a>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
                   <a href="#" class="text-grey hover:text-grey-dark">
-                    Privacy
+                    <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+                  </a>
+                </li>
+                <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                  <a href="#" class="hover:text-grey-dark">
+                    <FontAwesomeIcon icon={faYoutube} /> YouTube
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="block sm:table-cell">
-              <p class="uppercase text-grey text-sm sm:mb-6">Social</p>
+            <div class="block sm:table-cell text-white">
+              <p class="uppercase font-bold text-white text-sm sm:mb-6">
+                Kontakt oss
+              </p>
               <ul class="list-reset text-xs mb-6">
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    Facebook
+                  <a href="#" class="hover:text-grey-dark">
+                  <FontAwesomeIcon icon={faMailBulk} /> hei@microinfluence.no
                   </a>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    Linkedin
+                  <a href="#" class="hover:text-grey-dark">
+                    St. Olavs gate 14
                   </a>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    Twitter
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="block sm:table-cell">
-              <p class="uppercase text-grey text-sm sm:mb-6">Company</p>
-              <ul class="list-reset text-xs mb-6">
-                <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    Official Blog
-                  </a>
-                </li>
-                <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    About Us
-                  </a>
-                </li>
-                <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
-                  <a href="#" class="text-grey hover:text-grey-dark">
-                    Contact
+                  <a href="#" class="hover:text-grey-dark">
+                    7012, Trondheim
                   </a>
                 </li>
               </ul>
@@ -84,6 +92,7 @@ export default function Footer() {
           </div>
         </div>
       </section>
+      <div class="bg-black text-white text-center text-sm font-sm py-3">ⒸMicroinfluence, 2020</div>
     </div>
   );
 }

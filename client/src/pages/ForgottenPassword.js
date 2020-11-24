@@ -2,19 +2,15 @@ import React from "react";
 import Footer from "../components/Footer";
 import NavbarHome from "../components/NavbarHome";
 
-import { faSmile } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export default function Login() {
+export default function ForgottenPassword() {
   return (
     <div>
       <NavbarHome />
-      <div className="w-full flex flex-wrap">
-        <div className="w-full md:w-1/2 flex flex-col">
+      <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+        <div class="h-screen flex justify-center">
+          <div class="bg-white w-3/5">
 
-
-          <div className="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
-            <p className="text-center font-medium text-small text-3xl">Hei igjen <FontAwesomeIcon icon={faSmile} /></p>
+          <p className="text-center font-medium text-small text-3xl mt-12">Det skjer de beste av oss...</p>
             <form
               className="flex flex-col pt-3 md:pt-8"
               onsubmit="event.preventDefault();"
@@ -57,23 +53,11 @@ export default function Login() {
                 </a>
               </p>
             </div>
-            <div className="text-center pt-6">
-              <p>
-                Glemt passordet?{" "}
-                <a href="/forgotten-password" className="underline font-semibold">
-                  Lag nytt.
-                </a>
-              </p>
-            </div>
+
           </div>
+        
         </div>
 
-        <div className="w-1/2 shadow-2xl">
-          <img
-            className="object-cover w-full h-screen hidden md:block"
-            src="https://images.unsplash.com/photo-1557682268-e3955ed5d83f?ixlib=rb-1.2.1&auto=format&fit=crop&w=243&q=80"
-          />
-        </div>
       </div>
       <Footer />
     </div>
