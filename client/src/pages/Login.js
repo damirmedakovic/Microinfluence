@@ -51,7 +51,7 @@ export default function Login() {
             </form>
             <div className="text-center pt-12">
               <p>
-                Har du ikke konto og ønsker du å registrere deg som influencer?{" "}
+                Har du ikke konto og ønsker du å registrere deg?{" "}
                 <a href="register.html" className="underline font-semibold">
                   Klikk her.
                 </a>

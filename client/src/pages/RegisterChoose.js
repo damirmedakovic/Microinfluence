@@ -7,7 +7,7 @@ export default function RegisterChoose() {
     <div>
       <NavbarHome />
       <div className="w-full flex flex-wrap">
-        <div className="h-screen w-1/2">
+        <div className="h-screen border-2 border-indigo-800 w-1/2">
           <p className="flex flex-col mt-24 text-center font-bold text-xl">
             Jeg er en bedrift eller merkevare
           </p>
@@ -23,7 +23,7 @@ export default function RegisterChoose() {
             </a>
           </div>
         </div>
-        <div className="h-screen w-1/2">
+        <div className="h-screen border-2 border-indigo-600 w-1/2">
           <p className="flex flex-col mt-24 text-center font-bold text-xl">
             Jeg er en innholdsprodusent eller influencer
           </p>
