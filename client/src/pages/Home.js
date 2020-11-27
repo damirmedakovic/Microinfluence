@@ -4,6 +4,7 @@ import FormHero from "../components/FormHero";
 import Footer from "../components/Footer";
 import CtaContact from "../components/CtaContact";
 import NavbarHome from "../components/NavbarHome";
+import Announcement from "../components/Announcement";
 
 export default function Home() {
   return (

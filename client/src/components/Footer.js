@@ -12,6 +12,13 @@ import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
+
+  const apiUrl = "http://127.0.0.1:8000/users/"
+
+  fetch(apiUrl).then(response => response.json().then(data => console.log(data)))
+
+
+
   return (
     <div>
       <section class="bg-indigo-800 py-8 w-full">
