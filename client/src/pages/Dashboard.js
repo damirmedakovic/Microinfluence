@@ -4,6 +4,9 @@ import Footer from "../components/Footer";
 import NavbarHome from "../components/NavbarHome";
 
 export default function Dashboard() {
+
+  const content = false;
+
   return (
     <div>
       <NavbarHome />
@@ -22,7 +25,7 @@ export default function Dashboard() {
                   href="#"
                   class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50"
                 >
-                  Ny kampanje +
+                  + Ny kampanje
                 </a>
               </div>
             </div>
@@ -30,7 +33,7 @@ export default function Dashboard() {
         </div>
       </div>
       <div class="flex">
-        <div class="w-1/5 h-screen overflow-scroll">
+        <div class="w-1/5 text-white bg-gray-700 h-screen overflow-scroll">
           <div class="px-4 py-2 mt-5">
             {" "}
             <span class="font-semibold text-md">Kampanjer</span>
@@ -84,6 +87,9 @@ export default function Dashboard() {
           </a>
         </div>
         <div class="w-4/5 h-screen flex flex-col justify-center items-center">
+
+
+
           <span class="mb-8">Du har ingen aktive kampanjer for øyeblikket...</span>
 
         <img class="h-64 w-86" src={require("../assets/images/empty.png")}></img>

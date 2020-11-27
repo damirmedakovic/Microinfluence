@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Damir Medakovic",
+    "description": "Hi, im the first photographer on this website",
+    "porfolio": "https://www.damirm.com",
+    "email": "damir0096@hotmil.com",
+    "street": "Lundheimsveien 23",
+    "zipcode": "4460",
+    "price": 100
+  },
+  {
+    "name": "Nils Pettersen",
+    "description": "Hi, im the second photographer on this website",
+    "porfolio": "https://www.nilsemannen.com",
+    "email": "nils123@hotmil.com",
+    "street": "St. Olavs Gate 14",
+    "zipcode": "7012",
+    "price": 100
+  }
+]
