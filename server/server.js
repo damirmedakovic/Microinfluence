@@ -14,6 +14,7 @@ connectDB();
 const companies = require("./routes/companies");
 const creators = require("./routes/creators");
 //const campaigns = require("./routes/campaigns");
+const auth = require("./routes/auth");
 
 
 
@@ -28,6 +29,9 @@ app.use(express.json());
 app.use("/api/v1/photographers", companies);
 app.use("/api/v1/creators", creators);
 //app.use("/api/v1/campaigns", campaigns);
+app.use("/api/v1/auth", auth);
+
+
 
 // Error handler middleware
 app.use(errorHandler);

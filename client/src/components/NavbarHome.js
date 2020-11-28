@@ -8,14 +8,14 @@ export default function NavbarHome() {
   return (
     <div>
       <header class="flex">
-        <div class="flex-shrink-0 px-4 py-3 bg-white text-black">
+        <div class="flex-shrink-0 px-4 py-3 bg-white border-b-2 border-gray-200 text-black">
           <Link to={"/"}>
           <button class="items-center flex uppercase font-bold hover:text-gray-800 tracking-widest">
             Microinfluence
           </button>
           </Link>
         </div>
-        <div class="flex-1 flex bg-white px-4 items-center justify-between">
+        <div class="flex-1 flex bg-white border-b-2 border-gray-200 px-4 items-center justify-between">
           <nav class="flex">
             <a
               href="#"

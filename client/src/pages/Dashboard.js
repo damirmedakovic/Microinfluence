@@ -22,7 +22,7 @@ export default function Dashboard() {
               </div>
               <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
                 <a
-                  href="#"
+                  href="/new-campaign"
                   class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50"
                 >
                   + Ny kampanje
@@ -33,57 +33,57 @@ export default function Dashboard() {
         </div>
       </div>
       <div class="flex">
-        <div class="w-1/5 text-white bg-gray-700 h-screen overflow-scroll">
-          <div class="px-4 py-2 mt-5">
+        <div class="w-1/5 tracking-widest text-gray-700 bg-gray-200 border-r-2 text-sm font-medium h-screen overflow-scroll">
+          <div class="text-center mb-4 mt-8">
             {" "}
-            <span class="font-semibold text-md">Kampanjer</span>
+            <span class="font-bold uppercase text-md">Kampanjer</span>
           </div>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Alle</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Alle</div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Aktive</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Aktive</div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Utgåtte</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Utgåtte</div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Pausede</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Pausede</div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Planlagte</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Planlagte</div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Skisser</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Skisser</div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Ferdige</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Ferdige</div>
           </a>
-          <div class="px-4 py-2 mt-5">
+          <div class="text-center mb-4 mt-8">
             {" "}
-            <span class="font-semibold text-md">Innholdssamling</span>
+            <span class="font-bold uppercase text-md">Innholdssamling</span>
           </div>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">
               Tilgjengelige
             </div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Kjøpte</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Kjøpte</div>
           </a>
 
-          <div class="px-4 py-2 mt-5">
+          <div class="text-center mb-4 mt-8">
             {" "}
-            <span class="font-semibold text-md">Influencere</span>
+            <span class="font-bold uppercase text-md">Influencere</span>
           </div>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Alle</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Alle</div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Dine fans</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Dine fans</div>
           </a>
           <a class="" href="#">
-            <div class="px-2 py-2 hover:bg-gray-100 rounded-md">Grupper</div>
+            <div class="ml-2 px-4 py-2 border-b-2 hover:border-2 hover:border-indigo-800 hover:bg-gray-100 rounded-md">Grupper</div>
           </a>
         </div>
         <div class="w-4/5 h-screen flex flex-col justify-center items-center">

@@ -11,6 +11,8 @@ import Login from "./pages/Login";
 import ForgottenPassword from "./pages/ForgottenPassword";
 import Dashboard from "./pages/Dashboard";
 import InboxScreen from "./pages/InboxScreen";
+import NewCampaign from "./pages/NewCampaign";
+import DashboardDisplay from "./pages/DashboardDisplay";
 
 
 
@@ -18,8 +20,10 @@ function App() {
   return (
     <Route>
       <Switch>
-
+      <Route exact path="/dashboard-display" component={DashboardDisplay} />
+ 
         <Route exact path="/" component={Home} />
+        <Route path="/new-campaign" component={NewCampaign} />
         <Route path="/login" component={Login} />
         <Route path="/forgotten-password" component={ForgottenPassword} />
         <Route path="/register-company" component={RegisterCompany} />
