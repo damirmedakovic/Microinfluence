@@ -18,29 +18,24 @@ export default function NavbarHome() {
         <div class="flex-1 flex bg-white border-b-2 border-gray-200 px-4 items-center justify-between">
           <nav class="flex">
             <a
-              href="#"
+              href="/companies"
               class="inline-block hover:bg-gray-100 rounded-lg px-3 py-2 ml-2 leading-none text-sm text-black font-medium"
             >
               Bedrifter
             </a>
             <a
-              href="#"
+              href="/creators"
               class="inline-block hover:bg-gray-100 rounded-lg px-3 py-2 ml-2 leading-none text-sm text-black font-medium"
             >
               Influencere
             </a>
             <a
-              href="#"
+              href="/qa"
               class="inline-block hover:bg-gray-100 rounded-lg px-3 py-2 ml-2 leading-none text-sm text-black font-medium"
             >
-              Ofte stilte spørsmål
+              Spørsmål og svar
             </a>
-            <a
-              href="#"
-              class="inline-block hover:bg-gray-100 rounded-lg px-3 py-2 ml-2 leading-none text-sm text-black font-medium"
-            >
-              Om oss
-            </a>
+
           </nav>
           <div>
           <Link to={"/login"}>

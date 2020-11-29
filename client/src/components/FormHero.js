@@ -22,18 +22,20 @@ export default function FormHero() {
 
             <div class="relative pt-6 px-4 sm:px-6 lg:px-8"></div>
 
-
-
             <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div class="sm:text-center lg:text-left">
-                <h1 class="text-xl tracking-tight font-bold text-gray-900 sm:text-2xl md:text-4xl">
-                  <span class="block xl:inline">Influencers + Brands = </span>
+                <h1 class="text-xl tracking-tight font-semibold text-gray-900 sm:text-2xl md:text-4xl">
+                  <span class="block xl:inline tracking-wide">
+                    Influencers + Brands ={" "}
+                  </span>
                   <span class="block text-indigo-800 xl:inline">
-                  <FontAwesomeIcon icon={faHeart} />
+                    <FontAwesomeIcon icon={faHeart} />
                   </span>
                 </h1>
                 <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  Med Microinfluence har både influencere og bedrifter en felles platform for å søke, spore og utføre digitale markedsføringskampanjer. 
+                  Med Microinfluence har både influencere og bedrifter en felles
+                  platform for å lage, spore og utføre digitale
+                  markedsføringskampanjer.
                 </p>
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div class="rounded-md shadow">

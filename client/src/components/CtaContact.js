@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+
 
 export default function CtaContact() {
   return (
@@ -11,14 +14,18 @@ export default function CtaContact() {
           <div className="text-xl font-normal mt-4">
             Registrer deg på under 5 minutt i dag, helt gratis.
           </div>
+          <Link to={"/register-choose"}>
+
           <div className="mt-6 flex justify-center h-12 relative">
             <div
-              className="flex shadow-md font-medium absolute py-2 px-4 text-green-100
-        cursor-pointer bg-indigo-500 rounded text-lg tr-mt  svelte-jqwywd"
+              className="flex shadow-md font-medium absolute py-4 px-4 text-white
+        cursor-pointer bg-indigo-500 rounded-full text-lg "
             >
               Registrer deg
             </div>
+           
           </div>
+          </Link>
         </div>
       </div>
     </div>
