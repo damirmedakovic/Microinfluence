@@ -13,14 +13,14 @@ export default function InfluencersLanding() {
       <NavbarHome />
 
       <div class="flex justify-around w-full mt-4 p-4">
-        <div class="w-1/4 text-center text-white rounded-xl bg-gradient-to-b from-purple-400 via-pink-500 to-red-500 shadow-2xl ml-10 p-6">
-          <p class="font-fancy py-6 font-semibold text-4xl">
+        <div class="w-1/4 text-center text-white rounded-xl border-black border-2 bg-gradient-to-b from-purple-400 via-pink-500 to-red-500 shadow-2xl ml-10 p-6">
+          <p class="py-6 font-thin text-4xl">
             Lag innhold <FontAwesomeIcon icon={faCheck} />
           </p>
-          <p class="font-fancy py-4 font-semibold text-4xl">
+          <p class="py-4 font-thin text-4xl">
             Ha det gøy <FontAwesomeIcon icon={faCheck} />
           </p>
-          <p class="font-fancy py-4 font-semibold text-4xl">
+          <p class="py-4 font-thin text-4xl">
             Tjen penger <FontAwesomeIcon icon={faCheck} />
           </p>
           <p class="py-4 font-general font-semibold text-3xl">
@@ -59,14 +59,14 @@ cursor-pointer bg-indigo-700 hover:bg-indigo-400 rounded-full text-lg "
           <div class="shadow-lg overflow-hidden hover:shadow-2xl rounded-3xl h-94 w-72 ">
             <img src={require("../assets/images/money_2.jpg")}></img>
             <p class="text-xl font-bold text-center mb-3">1.</p>
-            <p class="text-center pb-5">
+            <p class="text-center pb-5 px-3">
               Finn produkter du har eller ønsker å kjøpe
             </p>
           </div>
           <div class="shadow-lg overflow-hidden hover:shadow-2xl rounded-3xl h-94 w-72 ">
             <img src={require("../assets/images/promote.jpg")}></img>
             <p class="text-xl font-bold text-center mb-3 mt-3">2.</p>
-            <p class="text-center pb-5">
+            <p class="text-center pb-5 px-3">
               Lag naturlig innhold med produktet. Seerne dine vil sette pris på
               det!
             </p>
@@ -76,7 +76,7 @@ cursor-pointer bg-indigo-700 hover:bg-indigo-400 rounded-full text-lg "
           <div class="shadow-lg overflow-hidden hover:shadow-2xl rounded-3xl h-94 w-72 ">
             <img src={require("../assets/images/money_1.jpg")}></img>
             <p class="text-xl font-bold text-center mb-3">3.</p>
-            <p class="text-center pb-5">Få betalt med en gang</p>
+            <p class="text-center pb-5 px-3">Få betalt med en gang</p>
           </div>
         </div>
         <div class="text-center mt-14 py-5 mb-14">

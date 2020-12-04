@@ -21,7 +21,7 @@ export default function NavbarHome() {
               href="/companies"
               class="inline-block hover:bg-gray-100 rounded-lg px-3 py-2 ml-2 leading-none text-sm text-black font-medium"
             >
-              Bedrifter
+              Bedrifter og Byråer
             </a>
             <a
               href="/creators"
@@ -33,7 +33,7 @@ export default function NavbarHome() {
               href="/qa"
               class="inline-block hover:bg-gray-100 rounded-lg px-3 py-2 ml-2 leading-none text-sm text-black font-medium"
             >
-              Spørsmål og svar
+              Spørsmål & Svar
             </a>
 
           </nav>

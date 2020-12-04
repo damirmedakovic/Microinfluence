@@ -29,17 +29,17 @@ export default function Footer() {
               <ul class="list-reset text-xs mb-6">
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
                   <a href="#" class="hover:text-grey-dark">
-                    Om oss
+                    Blogg
                   </a>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
                   <a href="#" class="hover:text-grey-dark">
-                    Ofte stilte spørsmål
+                    Spørsmål og svar
                   </a>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
                   <a href="#" class="hover:text-grey-dark">
-                    Bedrifter
+                    Bedrifter og byråer
                   </a>
                 </li>
                 <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">

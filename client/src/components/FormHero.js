@@ -33,9 +33,9 @@ export default function FormHero() {
                   </span>
                 </h1>
                 <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  Med Microinfluence har både influencere og bedrifter en felles
-                  platform for å lage, spore og utføre digitale
-                  markedsføringskampanjer.
+                  
+                  Lag, spor og utføre digitale
+                  markedsføringskampanjer som bedrift. Samarbeid med merkevarer du elsker som liten eller stor influencer.
                 </p>
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div class="rounded-md shadow">
@@ -62,7 +62,7 @@ export default function FormHero() {
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             class="object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+            src="https://images.pexels.com/photos/3326713/pexels-photo-3326713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt=""
           />
         </div>
