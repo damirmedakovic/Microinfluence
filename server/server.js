@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const colors = require("colors");
+const cookieParser = require("cookie-parser");
 const connectDB = require("./config/db");
 const errorHandler = require("./middleware/error");
 
@@ -25,8 +26,11 @@ const app = express();
 // Body parser
 app.use(express.json());
 
+// Cookie parser
+app.use(cookieParser());
+
 // Mount routers
-app.use("/api/v1/photographers", companies);
+app.use("/api/v1/companies", companies);
 app.use("/api/v1/creators", creators);
 //app.use("/api/v1/campaigns", campaigns);
 app.use("/api/v1/auth", auth);
