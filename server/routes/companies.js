@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const { protect } = require("../middleware/auth");
+const { protect, authorize } = require("../middleware/auth");
+
 const {
   getCompany,
   getCompanies,
@@ -14,12 +15,12 @@ const {
 
 router.route("radius/:zipcode/:distance").get(getCompaniesInRadius);
 
-router.route("/").get(getCompanies).post(protect, createCompany);
+router.route("/").get(getCompanies).post(protect, authorize("company", "admin") , createCompany);
 
 router
   .route("/:id")
   .get(getCompany)
-  .put(protect, updateCompany)
-  .delete(protect, deleteCompany);
+  .put(protect, authorize("company", "admin"), updateCompany)
+  .delete(protect, authorize("company", "admin"), deleteCompany);
 
 module.exports = router;
