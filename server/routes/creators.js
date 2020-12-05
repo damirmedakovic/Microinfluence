@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const { protect } = require("../middleware/auth");
+
 const {
   getCreator,
   getCreators,
@@ -11,12 +13,12 @@ const {
 
 router.route("radius/:zipcode/:distance").get(getCreatorsInRadius);
 
-router.route("/").get(getCreator).post(createCreator);
+router.route("/").get(getCreator).post(protect, createCreator);
 
 router
   .route("/:id")
   .get(getCreators)
-  .put(updateCreator)
-  .delete(deleteCreator);
+  .put(protect, updateCreator)
+  .delete(protect, deleteCreator);
 
 module.exports = router;
