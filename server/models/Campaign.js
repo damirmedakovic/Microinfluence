@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const geocoder = require("../utils/geocoder");
 
 const CampaignSchema = new mongoose.Schema({
   brandName: {

@@ -1,7 +1,10 @@
 import React from "react";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
+import NavbarCompany from "../components/NavbarCompany";
 import NavbarHome from "../components/NavbarHome";
+import { Link } from "react-router-dom";
+
 
 export default function Dashboard() {
 
@@ -9,7 +12,7 @@ export default function Dashboard() {
 
   return (
     <div>
-      <NavbarHome />
+      <NavbarCompany />
       <div>
         <div class="bg-indigo-800">
           <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">

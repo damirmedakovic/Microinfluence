@@ -142,6 +142,9 @@ exports.deleteCompany = async (req, res, next) => {
         new ErrorResponse(`Resource not found with id of ${req.params.id}`, 404)
       );
     }
+
+    company.remove();
+
     res.status(200).json({ success: true, data: company });
   } catch (err) {
     next(err);
@@ -175,3 +178,5 @@ exports.getCompaniesInRadius = async (req, res, next) => {
     next(err);
   }
 };
+
+

@@ -1,9 +1,12 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const colors = require("colors");
+const path = require("path");
 const cookieParser = require("cookie-parser");
 const connectDB = require("./config/db");
 const errorHandler = require("./middleware/error");
+const fileUpload = require("express-fileupload");
+
 
 // Load config file
 dotenv.config({ path: "./config/config.env" });
@@ -11,10 +14,12 @@ dotenv.config({ path: "./config/config.env" });
 // Connect to database
 connectDB();
 
+
+
 // Import route files
 const companies = require("./routes/companies");
 const creators = require("./routes/creators");
-//const campaigns = require("./routes/campaigns");
+const campaigns = require("./routes/campaigns");
 const auth = require("./routes/auth");
 
 
@@ -22,6 +27,12 @@ const auth = require("./routes/auth");
 const PORT = process.env.PORT || 5000;
 
 const app = express();
+
+// File uploading 
+app.use(fileUpload());
+
+// Set static folder
+app.use(express.static(path.join(__dirname, "public")));
 
 // Body parser
 app.use(express.json());
@@ -32,7 +43,7 @@ app.use(cookieParser());
 // Mount routers
 app.use("/api/v1/companies", companies);
 app.use("/api/v1/creators", creators);
-//app.use("/api/v1/campaigns", campaigns);
+app.use("/api/v1/campaigns", campaigns);
 app.use("/api/v1/auth", auth);
 
 

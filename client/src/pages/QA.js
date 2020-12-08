@@ -8,7 +8,7 @@ export default function QA() {
     <div>
       <NavbarHome />
       <div class="px-4 grid grid-cols-3 gap-4 py-20 shadow-2xl border-b-2 border-gray-300 text-center h-screen w-full rounded-bl-full rounded-tr-full rounded-br-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-        <div class="bg-white py-4 rounded-br-2xl shadow-2xl border-2 border-black">
+        <div class="bg-white py-4 rounded-br-2xl rounded-tl-2xl shadow-2xl border-2 border-black">
           <span class="text-black underline">
             Hvem er influencerne på Microinfluence?
           </span>
@@ -19,7 +19,7 @@ export default function QA() {
             produserer, noe vi ønsker å hjelpe med.
           </p>
         </div>
-        <div class="bg-white py-4 rounded-br-2xl shadow-2xl border-2 border-black">
+        <div class="bg-white py-4 rounded-br-2xl rounded-tl-2xl shadow-2xl border-2 border-black">
           <span class="text-black underline">
             Hvem er bedriftene på Microinfluence?
           </span>
@@ -30,7 +30,7 @@ export default function QA() {
             eller føre promosjoner for å drive salg på kort sikt.
           </p>
         </div>
-        <div class="bg-white py-4 rounded-br-2xl shadow-2xl border-2 border-black">
+        <div class="bg-white py-4 rounded-br-2xl rounded-tl-2xl shadow-2xl border-2 border-black">
           <span class="text-black underline">Hvem kan se profilen min?</span>
           <p class="py-4 px-4">
             Det er kun bedrifter som er registrert på platformen som kan se
@@ -38,7 +38,7 @@ export default function QA() {
             kan bli sett av influencere på platformen.{" "}
           </p>
         </div>
-        <div class="bg-white py-4 rounded-br-2xl shadow-2xl border-2 border-black">
+        <div class="bg-white py-4 rounded-br-2xl rounded-tl-2xl shadow-2xl border-2 border-black">
           <span class="text-black underline">Koster det noe?</span>
           <p class="py-4 px-4">
             Microinfluence er helt gratis for influencere. Bedrifter kan betale
@@ -48,7 +48,7 @@ export default function QA() {
             bedrifter av alle størrelser.{" "}
           </p>
         </div>{" "}
-        <div class="bg-white py-4 rounded-br-2xl shadow-2xl border-2 border-black">
+        <div class="bg-white py-4 rounded-br-2xl rounded-tl-2xl shadow-2xl border-2 border-black">
           <span class="text-black underline">
             Jeg som bedrift startet en kampanje, hva nå?
           </span>
@@ -59,7 +59,7 @@ export default function QA() {
             De du kjøper blir lagt ut av influencerne på de sosiale mediene du spesifiserte. Voila! 
           </p>
         </div>{" "}
-        <div class="bg-white py-4 rounded-br-2xl shadow-2xl border-2 border-black">
+        <div class="bg-white py-4 rounded-br-2xl rounded-tl-2xl shadow-2xl border-2 border-black">
           <span class="text-black underline">
             Kan dere lage X slik at jeg kan gjøre Y?
           </span>

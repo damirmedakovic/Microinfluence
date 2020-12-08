@@ -16,6 +16,7 @@ import DashboardDisplay from "./pages/DashboardDisplay";
 import CompaniesLanding from "./pages/CompaniesLanding";
 import InfluencersLanding from "./pages/InfluencersLanding";
 import QA from "./pages/QA";
+import DashboardShow from "./pages/DashboardShow";
 
 
 
@@ -25,7 +26,7 @@ function App() {
     <Route>
       <Switch>
       <Route exact path="/dashboard-display" component={DashboardDisplay} />
-
+        <Route path="/dashboard-show" component={DashboardShow} />
         <Route exact path="/" component={Home} />
         <Route path="/companies" component={CompaniesLanding} />
         <Route path="/creators" component={InfluencersLanding} />

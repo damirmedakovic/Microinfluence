@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function CtaContact() {
   return (
     <div>
-      <div className="flex py-24 justify-center">
+      <div className="flex py-16 justify-center">
         <div className="p-12 text-center max-w-2xl">
           <div className="md:text-3xl text-3xl font-bold">
              Klar for å teste det ut?

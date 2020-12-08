@@ -1,6 +1,7 @@
 const Creator = require("../models/Creator");
 const ErrorResponse = require("../utils/errorResponse");
 const geocoder = require("../utils/geocoder");
+const path = require("path");
 
 
 // @desc    Get all creators
@@ -144,35 +145,77 @@ exports.deleteCreator = async (req, res, next) => {
         new ErrorResponse(`Resource not found with id of ${req.params.id}`, 404)
       );
     }
+
+    creator.remove();
+
     res.status(200).json({ success: true, data: creator });
   } catch (err) {
     next(err);
   }
 };
 
-// @desc    Get creators in radius
-// @route   GET /api/v1/creators/radius/:zipcode/:distance
+
+
+
+
+// @desc    Upload profile photo
+// @route   PUT /api/v1/creators/:id/profile-photo
 // @access  Private
-exports.getCreatorsInRadius = async (req, res, next) => {
+
+exports.profilePhotoUpload = async (req, res, next) => {
   try {
-    const { zipcode, distance } = req.params;
+    const creator = await Creator.findById(req.params.id);
 
-    // Get lan/lat
-    const loc = await geocoder.geocode(zipcode);
-    const lat = loc[0].latitude;
-    const lng = loc[0].longitude;
+    if (!creator) {
+      return next(
+        new ErrorResponse(`Resource not found with id of ${req.params.id}`, 404)
+      );
+    }
 
-    const radius = distance / 6378;
+    if(!req.files) {
 
-    const creators = await Creator.find({
-      location: { $geoWithin: { $centerSphere: [[lng, lat], radius] } },
+      return next(
+        new ErrorResponse(`Please upload a file`, 400)
+      );
+    }
+
+    const file = req.files.file; 
+
+    if(!file.mimetype.startsWith("image")) {
+
+      return next(
+        new ErrorResponse(`Please upload an image file`, 400)
+      );
+    }
+
+    if(file.size > process.env.MAX_FILE_UPLOAD) {
+      return next(
+        new ErrorResponse(`Please upload an image less than ${MAX_FILE_UPLOAD} bytes`, 400)
+      );
+    }
+
+    // Create unique file identifier 
+
+    let extension = path.parse(file.name).ext; 
+    file.name = `profile_${creator._id}${extension}`;
+
+    file.mv(`${process.env.FILE_UPLOAD_PATH}/${file.name}`, async (err) => {
+
+      if(err) {
+        console.error(err);
+
+        return next(
+          new ErrorResponse(`Problem with file upload`, 500)
+        );
+
+      }
+
+      await Creator.findByIdAndUpdate(req.params.id, { profilePhoto: file.name})
+
+      res.status(200).json({ success: true, data: file.name});
     });
 
-    res.status(200).json({
-      success: true,
-      count: creators.length,
-      data: creators,
-    });
+
   } catch (err) {
     next(err);
   }

@@ -8,16 +8,17 @@ const {
   updateCreator,
   deleteCreator,
   createCreator,
-  getCreatorsInRadius,
+  profilePhotoUpload
 } = require("../controllers/creators");
 
-router.route("radius/:zipcode/:distance").get(getCreatorsInRadius);
 
-router.route("/").get(getCreator).post(protect, createCreator);
+router.route("/:id/profile-photo").put(protect, profilePhotoUpload);
+
+router.route("/").get(getCreators).post(protect, createCreator);
 
 router
   .route("/:id")
-  .get(getCreators)
+  .get(getCreator)
   .put(protect, updateCreator)
   .delete(protect, deleteCreator);
 
