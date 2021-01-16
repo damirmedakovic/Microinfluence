@@ -30,4 +30,9 @@ Brands
 - Should be able to browse available and previously bought content
 
 
+![](assets/ss6.png)
+![](assets/ss5.png)
+![](assets/ss4.png)
+![](assets/ss3.png)
+![](assets/ss2.png)
 ![](assets/ss1.png)
