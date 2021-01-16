@@ -28,3 +28,6 @@ Brands
 - Should be able to quickly select and pay for desired content submitted to a campaign
 - Should be able to browse their campaigns (active, inactive, drafts etc. ) 
 - Should be able to browse available and previously bought content
+
+
+![](assets/ss1.png)
